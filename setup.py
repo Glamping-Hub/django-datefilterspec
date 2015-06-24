@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-daterange-filter',
-    version='1.1.1',
+    version='1.1.2',
     description='Allow to filter by a custom date range on the Django Admin',
     long_description=open('README.rst').read(-1),
     author='Tomas Zulberti',
@@ -18,7 +18,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    classifiers = [
+    classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
@@ -35,5 +35,5 @@ setup(
         'Environment :: Web Environment',
         'Operating System :: OS Independent'
     ],
-    license = 'License :: OSI Approved :: BSD License',
+    license='License :: OSI Approved :: BSD License',
 )

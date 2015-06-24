@@ -1,4 +1,5 @@
 {% load i18n admin_static %}
+<!--
 <h3>{% blocktrans with filter_title=title %} By {{ filter_title }} {% endblocktrans %}</h3>
 <style>
     .calendarbox, .clockbox {
@@ -20,10 +21,7 @@
     }
 </style>
 <form method="GET" action="">
+-->
     {{ spec.form.media }}
-    {{ spec.form.as_p }}
-    <p class="submit-row">
-    <input type="submit" value="{% trans "Search" %}">
-    <input type="reset" value="{% trans "Clear" %}">
-    </p>
-</form>
+    <div style="display: inline-block; margin-bottom: 0; vertical-align: middle;">{% blocktrans with filter_title=title %}{{ filter_title }}: {% endblocktrans %}{{ spec.form }}</div>
+

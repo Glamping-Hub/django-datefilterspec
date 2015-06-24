@@ -21,9 +21,7 @@ except ImportError:
 
 class DateRangeFilterAdminSplitDateTime(AdminSplitDateTime):
     def format_output(self, rendered_widgets):
-        return format_html('<p>{0} {1}<br />{2} {3}</p>',
-                           '', rendered_widgets[0],
-                           '', rendered_widgets[1])
+        return format_html('{0} {1}', rendered_widgets[0], rendered_widgets[1])
 
 
 class DateRangeFilterBaseForm(forms.Form):
